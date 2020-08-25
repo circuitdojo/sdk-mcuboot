@@ -332,6 +332,12 @@ config MCUBOOT_LOG_THREAD_STACK_SIZE
 	help
 	  Set the internal stack size for MCUBoot log processing thread.
 
+config MCUBOOT_INDICATION_LED
+	bool "Turns on LED indication when device is in DFU"
+	default n
+	help
+		Using LED0, device blinks the LED every 1 second
+
 menuconfig MCUBOOT_SERIAL
 	bool "MCUboot serial recovery"
 	default n
